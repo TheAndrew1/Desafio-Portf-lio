@@ -13,8 +13,33 @@
 
     font-family: 'Merriweather Sans', sans-serif;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 body{
     background-color: var(--body-bg-color);
+    
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+aside{
+    flex: 25vw;
+}
+
+main{
+    flex: 1;
+}
+
+.container{
+    background-color: var(--bg-cards);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.foto_perfil{
+    width: 20%;
+
+    border-radius: 100%;
 }
