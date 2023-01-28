@@ -18,13 +18,13 @@
 
 /* CONTEUDO DA PAGINA */
 body{
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
 
     background-color: var(--body-bg-color);
     
     display: flex;
     justify-content: space-around;
-    gap: 1.5rem;
+    gap: 4rem;
 }
 
 aside{
@@ -140,4 +140,67 @@ main{
 li{
     font-size: 13px;
     font-weight: 400;
+}
+
+/* SEÇÃO PROJETOS E POSTAGENS*/
+.projetos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cabecalho{
+    flex-basis: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Link{
+    text-decoration: underline;
+}
+
+.projeto{
+    width: 500px;
+    height: 150px;
+
+    padding: 1rem 2rem;
+
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.titulo, .desc{
+    grid-column: 1 / span 4;
+    align-self: center;
+}
+
+.tech{
+    grid-column: 4;
+    justify-self: flex-end;
+}
+
+.postagem{
+    padding: 1rem 2rem;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.post{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.temas{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
 }
