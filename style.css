@@ -18,15 +18,18 @@
 
 /* CONTEUDO DA PAGINA */
 body{
+    padding: 1rem 1rem;
+
     background-color: var(--body-bg-color);
     
     display: flex;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 aside{
-    width: 25%;
+    flex: 0 0 25vw;
+
     display: flex;
     flex-flow: column nowrap;
 
@@ -34,6 +37,8 @@ aside{
 }
 
 main{
+    flex: 1;
+
     display: flex;
     flex-flow: column nowrap;
 
